@@ -7,6 +7,7 @@ Demo app showing how to use https://micronaut.io with http://jdbi.org/.
 * Add/Delete/List Students
 
 **Guide**
+
 To use the demo app, do the following:
 
 1. Run `students_db.sql` to create the DB and tables.
