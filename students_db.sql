@@ -28,10 +28,10 @@ CREATE TABLE IF NOT EXISTS `authorities` (
 -- Dumping structure for table students.student
 CREATE TABLE IF NOT EXISTS `student` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `firstName` varchar(25) DEFAULT NULL,
+  `first_name` varchar(25) DEFAULT NULL,
   `initials` varchar(255) DEFAULT NULL,
-  `lastName` varchar(25) DEFAULT NULL,
-  `birthDate` date DEFAULT NULL,
+  `last_name` varchar(25) DEFAULT NULL,
+  `birth_date` date DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
 
