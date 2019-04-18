@@ -1,0 +1,43 @@
+###
+POST http://localhost:7500/students/ HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiZG9uZGVoIiwibmJmIjoxNTU1NTgzMzI0LCJyb2xlcyI6W10sImlzcyI6Im1pY3JvbmF1dC1qZGJpIiwiZXhwIjoxNTU1NTg2OTI0LCJpYXQiOjE1NTU1ODMzMjR9.L8NzbSpJQkyofXypD6NRyryMujEA-TghlDEDp38TIDw
+content-type: application/json
+
+{
+    "firstName": "Empty Last Name",
+    "initials": "The Necessary",
+    "lastName": ""
+}
+
+###
+GET http://localhost:7500/students/ HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiZG9uZGVoIiwibmJmIjoxNTU1NTgzMzI0LCJyb2xlcyI6W10sImlzcyI6Im1pY3JvbmF1dC1qZGJpIiwiZXhwIjoxNTU1NTg2OTI0LCJpYXQiOjE1NTU1ODMzMjR9.L8NzbSpJQkyofXypD6NRyryMujEA-TghlDEDp38TIDw
+
+###
+GET http://localhost:7500/students/15 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiZG9uZGVoIiwibmJmIjoxNTU1NTgzMzI0LCJyb2xlcyI6W10sImlzcyI6Im1pY3JvbmF1dC1qZGJpIiwiZXhwIjoxNTU1NTg2OTI0LCJpYXQiOjE1NTU1ODMzMjR9.L8NzbSpJQkyofXypD6NRyryMujEA-TghlDEDp38TIDw
+
+###
+DELETE http://localhost:7500/students/4 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiZG9uZGVoIiwibmJmIjoxNTU1NTgzMzI0LCJyb2xlcyI6W10sImlzcyI6Im1pY3JvbmF1dC1qZGJpIiwiZXhwIjoxNTU1NTg2OTI0LCJpYXQiOjE1NTU1ODMzMjR9.L8NzbSpJQkyofXypD6NRyryMujEA-TghlDEDp38TIDw
+
+
+###Authentication
+###Login
+POST http://localhost:7500/login HTTP/1.1
+content-type: application/json
+
+{
+    "username": "your_username",
+    "password": "your_pwd"
+}
+
+###Register
+###
+POST http://localhost:7500/users/ HTTP/1.1
+content-type: application/json
+
+{
+    "username": "your_username",
+    "password": "your_pwd"
+}

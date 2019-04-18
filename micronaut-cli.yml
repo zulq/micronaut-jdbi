@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: micronaut.jdbi
+---
+testFramework: spek
+sourceLanguage: kotlin

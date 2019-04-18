@@ -1,0 +1,32 @@
+---
+micronaut:
+  application:
+    name: micronaut-jdbi
+  server:
+    port: 7500
+
+---
+micronaut:
+  security:
+    enabled: true
+    endpoints:
+      login:
+        enabled: true
+      oauth:
+        enabled: true
+    token:
+      jwt:
+        enabled: true
+        signatures:
+          secret:
+            generator:
+              secret: "${JWT_GENERATOR_SIGNATURE_SECRET:YOUD__DKJ&*@#1kljdkjlkdLKJDkd0kdkjkdjJJNLQPUYVM}"
+
+---
+#datasources.default: {}
+---
+micronaut:
+  io:
+    watch:
+      paths: src/main
+      restart: true
